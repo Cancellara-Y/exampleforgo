@@ -16,3 +16,13 @@ func (a *AssistSlice) RemoveRepeatedString(src []string)( dest []string ){
 	}
 	return
 }
+
+
+func (a *AssistSlice) Strings2Map(src []string) map[string]struct{} {
+	uniqMap := make(map[string]struct{})
+
+	for _, v := range src {
+		uniqMap[v] = struct{}{}
+	}
+	return uniqMap
+}
