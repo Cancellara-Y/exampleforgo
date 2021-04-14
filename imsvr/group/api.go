@@ -5,6 +5,10 @@ package group
 type GroupApi interface {
 	 CreateGroup() error
 	 RemoveGroup() error
+	 RenameGroup() error
+	 QuitGroup() error
+	 DissolutionGroup() error
+	 SetGroupAdmin() error
 }
 
 
