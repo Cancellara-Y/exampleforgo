@@ -2,13 +2,24 @@ package group
 
 
 //GroupApi 群操作相关的api
-type GroupApi interface {
+type Api interface {
+	 //group manage
 	 CreateGroup() error
-	 RemoveGroup() error
 	 RenameGroup() error
-	 QuitGroup() error
 	 DissolutionGroup() error
 	 SetGroupAdmin() error
+	 SetGroupAvatar() error
+	 GetGroupDetail() error
+
+	 //member manage
+	 RemoveMember() error
+	 InviteMember() error
+	 ApplyJoinGroup() error
+	 QuitGroup() error
+
 }
 
 
+type Impl struct {
+
+}
