@@ -8,10 +8,13 @@ type Api interface {
 	 RenameGroup() error
 	 DissolutionGroup() error
 	 SetGroupAdmin() error
-	 SetGroupAvatar() error
 	 GetGroupDetail() error
 
-	 //member manage
+	 //group info
+	SetGroupAvatar() error
+	SetGroupName() error
+
+	//member manage
 	 RemoveMember() error
 	 InviteMember() error
 	 ApplyJoinGroup() error
