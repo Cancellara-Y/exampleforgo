@@ -11,10 +11,12 @@ type Api interface {
 	 GetGroupDetail() error
 
 	 //group info
-	SetGroupAvatar() error
-	SetGroupName() error
 
-	//member manage
+	 SetGroupAvatar() error
+	 SetGroupName() error
+	 SetGroupAlias() error
+
+ 	//member manage
 	 RemoveMember() error
 	 InviteMember() error
 	 ApplyJoinGroup() error
