@@ -23,6 +23,8 @@ type Api interface {
 	 ApplyJoinGroup() error
 	 QuitGroup() error
 
+	//file manage
+	DownloadFile() error
 }
 
 
