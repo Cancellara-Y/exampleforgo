@@ -15,6 +15,7 @@ type Api interface {
 	 SetGroupAvatar() error
 	 SetGroupName() error
 	 SetGroupAlias() error
+	 SetGroupBulletin() error
 
  	//member manage
 	 RemoveMember() error
