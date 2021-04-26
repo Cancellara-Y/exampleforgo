@@ -24,6 +24,7 @@ type Api interface {
 	 QuitGroup() error
 
 	//file manage
+
 	DownloadFile() error
 }
 
