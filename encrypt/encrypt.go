@@ -1,9 +1,8 @@
-package main
+package encrypt
 
 import (
 	"encoding/hex"
 	"github.com/forgoer/openssl"
-	"fmt"
 )
 
 const mKey = "9763LB9SC541254FCE8ES83D02AD2526"
@@ -41,14 +40,4 @@ func decryptRemoteId(encryptContent string) (string, error) {
 		return "",err
 	}
 	return string(a), nil
-}
-
-func main() {
-	fmt.Println(encryptRemoteId("A2E619B7D0EB0DD9E3379DD65058EFFC"))
-	fmt.Println(decryptRemoteId("A2E619B7D0EB0DD9E3379DD65058EFFC"))
-
-	fmt.Println(encryptRemoteId("61AAB9615ED0D84E669412A8DDA11580901A2DDBF0758730A19ADA8F0B6DD9F8"))
-	fmt.Println(decryptRemoteId("61AAB9615ED0D84E669412A8DDA11580901A2DDBF0758730A19ADA8F0B6DD9F8"))
-
-
 }
