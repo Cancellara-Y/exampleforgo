@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("/Users/yjf/tmp/gen.sh")
+f, err := os.Open("~/tmp/gen.sh")
 	if err != nil {
 		fmt.Println(err)
 		return

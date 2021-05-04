@@ -26,6 +26,9 @@ type Api interface {
 	//file manage
 
 	DownloadFile() error
+	 UploadFile() error
+	 DeleteFile() error
+
 }
 
 
