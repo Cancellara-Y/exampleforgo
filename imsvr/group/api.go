@@ -29,6 +29,9 @@ type Api interface {
 	 UploadFile() error
 	 DeleteFile() error
 
+	AddGroupTag() error
+	 RemoveGroupTag() error
+	 GetGroupTagList() error
 }
 
 
