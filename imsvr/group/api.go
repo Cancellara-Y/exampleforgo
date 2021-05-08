@@ -32,6 +32,7 @@ type Api interface {
 	AddGroupTag() error
 	 RemoveGroupTag() error
 	 GetGroupTagList() error
+	 ModifyGroupTag() error
 }
 
 
