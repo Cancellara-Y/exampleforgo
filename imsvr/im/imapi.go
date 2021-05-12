@@ -2,5 +2,6 @@ package im
 
 
 type ImApi interface {
-	SendMsg() error 
+	SendMsg() error
+	GetMsg () error
 }
