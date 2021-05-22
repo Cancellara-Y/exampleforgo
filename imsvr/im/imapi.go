@@ -5,4 +5,5 @@ type ImApi interface {
 	GetMsg() error
 	DelMsg() error
 	EditMsg() error
+	PinMsg() error
 }
