@@ -7,4 +7,5 @@ type ImApi interface {
 	EditMsg() error
 	PinMsg() error
 	RecallMsg() error
+	Forward() error
 }
